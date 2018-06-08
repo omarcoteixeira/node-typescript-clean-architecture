@@ -8,19 +8,19 @@ enum UserRole {
 }
 
 interface IUser extends IBaseEntity {
-    name: String,
-    email: String
+    name: string,
+    email: string
     role: UserRole,
-    active: Boolean,
+    active: boolean,
     createdAt: number,
     updatedAt: number,
 }
 
 class User extends BaseEntity implements IUser {
-    name: String;
-    email: String;
+    name: string;
+    email: string;
     role: UserRole;
-    active: Boolean;
+    active: boolean;
     createdAt: number;
     updatedAt: number;
 
@@ -46,7 +46,7 @@ class User extends BaseEntity implements IUser {
         return this;
     }
 
-    setActive(active: Boolean): User {
+    setActive(active: boolean): User {
         this.active = active;
         return this;
     }

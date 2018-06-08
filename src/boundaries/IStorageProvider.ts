@@ -1,5 +1,5 @@
 interface IStorageProvder {
-    upload(path: String, buffer: any) : void;
+    upload(path: string, buffer: any) : void;
 }
 
 export {
