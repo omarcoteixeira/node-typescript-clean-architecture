@@ -1,6 +1,6 @@
-import { AppNamespace } from "../config";
+import { namespace } from "../config";
 
-const debug = require('debug')(AppNamespace)
+const debug = require('debug')(namespace)
 
 export class Logger {
     public static log(message: string) {

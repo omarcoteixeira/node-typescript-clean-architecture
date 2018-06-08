@@ -1,5 +1,5 @@
-const AppNamespace = 'node-typescript-clean-architecture';
+const namespace = 'node-typescript-clean-architecture';
 
 export {
-    AppNamespace
+    namespace
 }
