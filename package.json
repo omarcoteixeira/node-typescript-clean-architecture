@@ -8,7 +8,7 @@
     "start": "npm run shell",
     "test": "nyc --reporter=text mocha --opts ./mocha.opts",
     "ci-test": "npm i && npm run test",
-    "ci-coverage": "nyc report --reporter=text-lcov > coverage.lcov mocha --opts && codecov - t $CODECOV_TOKEN"
+    "ci-coverage": "nyc report --reporter=text-lcov > coverage.lcov mocha --opts && codecov -t $CODECOV_TOKEN"
   },
   "main": "lib/index.js",
   "dependencies": {
