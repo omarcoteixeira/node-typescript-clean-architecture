@@ -1,5 +1,6 @@
 import { IDataProvider } from "../../boundaries";
 import { IUser } from "../../domains";
+import { Logger } from "../../infrastructure";
 
 
 export class AddUserUseCase {
@@ -9,7 +10,7 @@ export class AddUserUseCase {
     ) {}
 
     public execute(user: IUser) : Promise<IUser> {
-        console.info(`Trying to add an user: ${user}`);
+        Logger.log(`Trying to add an user: ${user}`);
         return this.dataProvider.add(user);
     }
 }
