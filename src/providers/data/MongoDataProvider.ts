@@ -5,7 +5,7 @@ class MongoDataProvider<T extends BaseEntity> implements IDataProvider<T> {
     add(item: T): Promise<T> {
         throw new Error("Method not implemented.");
     }
-    find(key: String, value: Object): Promise<T[]> {
+    find(key: string, value: Object): Promise<T[]> {
         throw new Error("Method not implemented.");
     }
     findById(id: Object): Promise<T> {
