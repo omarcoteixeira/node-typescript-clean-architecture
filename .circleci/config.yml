@@ -30,3 +30,6 @@ jobs:
         
       # run tests!
       - run: npm test
+
+      # run ci coverage!
+      - run: npm run ci-coverage
