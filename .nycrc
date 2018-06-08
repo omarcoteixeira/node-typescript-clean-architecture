@@ -1,7 +1,7 @@
 {
   "include": [
-    "src/**/*.route.ts",
-    "src/**/*.usecase.ts"
+    "src/**/*Route.ts",
+    "src/**/*UseCase.ts"
   ],
   "extension": [
     ".ts"

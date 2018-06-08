@@ -6,9 +6,9 @@
     "serve": "npm run build && node lib/index.js",
     "shell": "npm run build",
     "start": "npm run shell",
-    "test": "nyc mocha --opts ./mocha.opts",
+    "test": "nyc --reporter=text mocha --opts ./mocha.opts",
     "ci-test": "npm i && npm run test",
-    "ci-coverage": "npm run test && codecov $CODECOV_TOKEN"
+    "ci-coverage": "npm run test"
   },
   "main": "lib/index.js",
   "dependencies": {
