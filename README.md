@@ -3,3 +3,15 @@
 [![sonar](https://sonarcloud.io/api/project_badges/measure?project=node-typescript-clean-architecture&metric=alert_status)](https://sonarcloud.io/api/project_badges/measure?project=node-typescript-clean-architecture&metric=alert_status)
 
 # Node (Typescript) Application Server using Clean Architecture
+
+
+### Run Sonar Cloud
+```sh
+docker run -ti -v $(pwd):/root/src omarcoteixeira/docker-sonar-scanner:v1 sonar-scanner \
+  -Dsonar.projectBaseDir=/root/src \
+  -Dsonar.projectKey=node-typescript-clean-architecture \
+  -Dsonar.organization=omarcoteixeira-github \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=$SONAR_SCANNER_LOGIN
+```
